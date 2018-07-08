@@ -1,0 +1,17 @@
+.FunctionBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4b5b6e;
+  width: 20%;
+  bottom: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .FunctionBar {
+    width: 30%;
+  }
+}

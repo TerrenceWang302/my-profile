@@ -1,0 +1,5 @@
+.Labels {
+  padding: 2em 0;
+  display: flex;
+  flex-flow: wrap;
+}

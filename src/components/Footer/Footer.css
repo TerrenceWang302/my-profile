@@ -1,0 +1,8 @@
+.Footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Advent Pro', sans-serif;
+  color: #fff;
+  padding: 0 0 20px 20px;
+}

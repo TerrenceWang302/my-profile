@@ -1,0 +1,69 @@
+.Label {
+  margin: 10px 15px;
+  -webkit-box-shadow: 4px 3px 5px #999;
+  box-shadow: 4px 3px 5px #999;
+}
+
+.Left,
+.Right {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border: 1px solid #999;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.Right {
+  border-left: none;
+  background-color: #ccc;
+}
+
+.Label:hover {
+  animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+  0 {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Left,
+  .Right {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Left,
+  .Right {
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Label {
+    margin: 8px 2px;
+  }
+
+  .Left,
+  .Right {
+    font-size: .7em;
+    padding: 2px 4px;
+  }
+}

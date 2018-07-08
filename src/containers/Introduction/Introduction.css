@@ -1,0 +1,63 @@
+.Introduction {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 1em;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.Introduction h1,
+.Introduction h2 {
+  font-size: 3em;
+  -webkit-transition: font-size .3s;
+  -o-transition: font-size .3s;
+  transition: font-size .3s;
+}
+
+.Introduction h2 {
+  margin: 1em 0 .5em;
+}
+
+.Introduction strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.Content {
+  font-size: 1.8em;
+  line-height: 1.2em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Introduction h1,
+  .Introduction h2 {
+    font-size: 2em;
+  }
+
+  .Content {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Introduction {
+    padding: 20px;
+  }
+
+  .Content {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Introduction h1,
+  .Introduction h2 {
+    font-size: 1.5em;
+  }
+
+  .Content {
+    font-size: 1em;
+  }
+}

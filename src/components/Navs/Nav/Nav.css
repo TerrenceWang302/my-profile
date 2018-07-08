@@ -1,0 +1,35 @@
+.Nav {
+  font-size: 2em;
+  padding: 1em 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+  color: #fff;
+  text-align: right;
+  letter-spacing: 1px;
+  display: block;
+  -webkit-transition: font-size .2s;
+  -o-transition: font-size .2s;
+  transition: font-size .2s;
+}
+
+.Nav:hover {
+  background-color: #fecc09;
+  color: #333 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Nav {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Nav {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Nav {
+    font-size: 1em;
+  }
+}

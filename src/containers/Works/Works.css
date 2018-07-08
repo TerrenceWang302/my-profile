@@ -1,0 +1,36 @@
+.Works {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 1em;
+}
+
+.Works h1 {
+  font-size: 3em;
+  -webkit-transition: font-size .3s;
+  -o-transition: font-size .3s;
+  transition: font-size .3s;
+}
+
+.Works strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Works h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Works {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Works h1 {
+    font-size: 1.5em;
+  }
+}

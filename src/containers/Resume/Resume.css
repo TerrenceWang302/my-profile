@@ -1,0 +1,73 @@
+.Resume {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px 20px;
+}
+
+.Resume h3 {
+  font-size: 2.5em;
+  margin-bottom: .8em;
+}
+
+.Resume p {
+  font-size: 1.5em;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.Resume p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  border: 1px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: width .5s, opacity .3s;
+  -o-transition: width .5s, opacity .3s;
+  transition: width .5s, opacity .3s;
+}
+
+.Resume .Indi:hover p::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.Skill {
+  display: flex;
+  flex-flow: wrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+.Resume h3, .Resume p {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Resume h3 {
+    font-size: 1.8em;
+  }
+
+  .Resume p {
+    font-size: 1em;
+    margin: 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Resume p {
+    padding: 2px 15px;
+  }
+}
