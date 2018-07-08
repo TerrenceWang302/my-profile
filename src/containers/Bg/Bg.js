@@ -9,8 +9,8 @@ const Bg = () => {
     <div className={classes.Bg}>
       <Switch>
         <Route path='/works' component={Works} />
-        <Route path='/profile' component={Introduction} />
-        <Redirect from='/' to='/profile' />
+        <Route path='/my-profile' component={Introduction} />
+        <Redirect from='/' to='/my-profile' />
       </Switch>
     </div>
   );
